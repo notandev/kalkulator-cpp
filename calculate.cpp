@@ -5,7 +5,8 @@ using namespace std;
 int main() {
     float num1, num2; 
     long jumlah, pilihan;
-while (true) {
+    char loop
+do {
         cout<<"======================================";
         cout<<endl;
         cout<<"CALCULATOR C++ by andev"<<endl;
@@ -27,7 +28,9 @@ while (true) {
             cout<<"Ditambahkan Dengan = ";cin>>num2;
             cout<<endl;
             jumlah = num1 + num2;
-            cout<<"Hasil Operasi Penjumlahan = "<<jumlah;
+            cout<<"Hasil Operasi Penjumlahan = "<<jumlah<<endl;
+            cout<<"Menghitung Lagi? y/n = ";
+            cin>>loop;
         }
 
         else if (pilihan == 2) {
@@ -38,7 +41,9 @@ while (true) {
             cout<<"Dikurangi Dengan = ";cin>>num2;
             cout<<endl;
             jumlah = num1 - num2;
-            cout<<"Hasil Operasi Pengurangan = "<<jumlah;
+            cout<<"Hasil Operasi Pengurangan = "<<jumlah<<endl;
+            cout<<"Menghitung Lagi? y/n = ";
+            cin>>loop;
         }
 
         else if (pilihan == 3) {
@@ -49,7 +54,9 @@ while (true) {
             cout<<"Dikalikan Dengan = ";cin>>num2;
             cout<<endl;
             jumlah = num1 * num2;
-            cout<<"Hasil Operasi Perkalian = "<<jumlah;
+            cout<<"Hasil Operasi Perkalian = "<<jumlah<<endl;
+            cout<<"Menghitung Lagi? y/n = ";
+            cin>>loop;
         }
 
         else if (pilihan == 4) {
@@ -60,17 +67,15 @@ while (true) {
             cout<<"Dibagi Dengan = ";cin>>num2;
             cout<<endl;
             jumlah = num1 / num2;
-            cout<<"Hasil Operasi Pembagian = "<<jumlah;
+            cout<<"Hasil Operasi Pembagian = "<<jumlah<<endl;
+            cout<<"Menghitung Lagi? y/n = ";
+            cin>>loop;
         }
         else {
             cout<<"Invalid Input!";
             break;
         }
-        cout<<endl;
-        cout<<"======================================";
-        cout<<endl;
-        cout<<"TO END THE LOOP, TYPE 'G'!!!!"<<endl;
-        //because im too dumb, didnt know how to end loop with if else statement, ehe.
     }
+    while (loop/='y');
 return 0;
 }
