@@ -5,7 +5,7 @@ using namespace std;
 int main() {
     float num1, num2; 
     long jumlah, pilihan;
-    char loop
+    char loop;
 do {
         cout<<"======================================";
         cout<<endl;
